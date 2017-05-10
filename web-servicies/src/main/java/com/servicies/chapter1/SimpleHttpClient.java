@@ -1,4 +1,4 @@
-package com.servicies;
+package com.servicies.chapter1;
 
 import java.io.BufferedReader;
 import java.io.IOException;
