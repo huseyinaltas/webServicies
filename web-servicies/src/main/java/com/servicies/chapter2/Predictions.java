@@ -3,6 +3,7 @@
  */
 package com.servicies.chapter2;
 
+import javax.servlet.ServletContext;
 import java.beans.XMLEncoder;
 import java.io.BufferedReader;
 import java.io.ByteArrayOutputStream;
