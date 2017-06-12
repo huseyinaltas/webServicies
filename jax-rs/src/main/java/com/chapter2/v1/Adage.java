@@ -1,4 +1,4 @@
-package com.chapter2;
+package com.chapter2.v1;
 
 import javax.xml.bind.annotation.XmlRootElement;
 
