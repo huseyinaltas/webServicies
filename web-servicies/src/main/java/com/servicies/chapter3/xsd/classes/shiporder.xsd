@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+    <xsd:simpleType name="stringtype">
+        <xsd:restriction base="xsd:string"/>
+    </xsd:simpleType>
+
+    <xsd:simpleType name="inttype">
+        <xsd:restriction base="xsd:positiveInteger"/>
+    </xsd:simpleType>
+
+    <xsd:simpleType name="dectype">
+        <xsd:restriction base="xsd:decimal"/>
+    </xsd:simpleType>
+
+    <xsd:simpleType name="orderidtype">
+        <xsd:restriction base="xsd:string">
+            <xsd:pattern value="[0-9]{6}"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+
+    <xsd:complexType name="shiptotype">
+        <xsd:sequence>
+            <xsd:element name="name" type="stringtype"/>
+            <xsd:element name="address" type="stringtype"/>
+            <xsd:element name="city" type="stringtype"/>
+            <xsd:element name="country" type="stringtype"/>
+        </xsd:sequence>
+    </xsd:complexType>
+
+    <xsd:complexType name="itemtype">
+        <xsd:sequence>
+            <xsd:element name="title" type="stringtype"/>
+            <xsd:element name="note" type="stringtype" minOccurs="0"/>
+            <xsd:element name="quantity" type="inttype"/>
+            <xsd:element name="price" type="dectype"/>
+        </xsd:sequence>
+    </xsd:complexType>
+
+    <xsd:complexType name="shipordertype">
+        <xsd:sequence>
+            <xsd:element name="orderperson" type="stringtype"/>
+            <xsd:element name="shipto" type="shiptotype"/>
+            <xsd:element name="item" maxOccurs="unbounded" type="itemtype"/>
+        </xsd:sequence>
+        <xsd:attribute name="orderid" type="orderidtype" use="required"/>
+    </xsd:complexType>
+
+    <xsd:element name="shiporder" type="shipordertype"/>
+
+</xsd:schema>
