@@ -38,4 +38,6 @@ dependencies {
     // https://mvnrepository.com/artifact/org.glassfish.jersey.media/jersey-media-json-jackson
     compile group: 'org.glassfish.jersey.media', name: 'jersey-media-json-jackson', version: '2.25.1'
 
+//     https://mvnrepository.com/artifact/com.sun.jersey/jersey-client
+     compile group: 'com.sun.jersey', name: 'jersey-client', version: '1.9.1'
 }
