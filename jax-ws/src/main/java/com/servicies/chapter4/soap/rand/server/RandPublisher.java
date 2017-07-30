@@ -1,4 +1,4 @@
-package com.servicies.chapter4.soap;
+package com.servicies.chapter4.soap.rand.server;
 
 import javax.xml.ws.Endpoint;
 
