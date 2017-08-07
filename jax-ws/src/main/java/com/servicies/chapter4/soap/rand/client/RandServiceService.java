@@ -17,14 +17,14 @@ import javax.xml.ws.WebServiceFeature;
  * Generated source version: 2.2
  * 
  */
-@WebServiceClient(name = "RandServiceService", targetNamespace = "http://soap.chapter4.servicies.com/", wsdlLocation = "http://localhost:8888/rs?wsdl")
+@WebServiceClient(name = "RandServiceService", targetNamespace = "http://server.rand.soap.chapter4.servicies.com/", wsdlLocation = "http://localhost:8888/rs?wsdl")
 public class RandServiceService
     extends Service
 {
 
     private final static URL RANDSERVICESERVICE_WSDL_LOCATION;
     private final static WebServiceException RANDSERVICESERVICE_EXCEPTION;
-    private final static QName RANDSERVICESERVICE_QNAME = new QName("http://soap.chapter4.servicies.com/", "RandServiceService");
+    private final static QName RANDSERVICESERVICE_QNAME = new QName("http://server.rand.soap.chapter4.servicies.com/", "RandServiceService");
 
     static {
         URL url = null;
@@ -69,7 +69,7 @@ public class RandServiceService
      */
     @WebEndpoint(name = "RandServicePort")
     public RandService getRandServicePort() {
-        return super.getPort(new QName("http://soap.chapter4.servicies.com/", "RandServicePort"), RandService.class);
+        return super.getPort(new QName("http://server.rand.soap.chapter4.servicies.com/", "RandServicePort"), RandService.class);
     }
 
     /**
@@ -81,7 +81,7 @@ public class RandServiceService
      */
     @WebEndpoint(name = "RandServicePort")
     public RandService getRandServicePort(WebServiceFeature... features) {
-        return super.getPort(new QName("http://soap.chapter4.servicies.com/", "RandServicePort"), RandService.class, features);
+        return super.getPort(new QName("http://server.rand.soap.chapter4.servicies.com/", "RandServicePort"), RandService.class, features);
     }
 
     private static URL __getWsdlLocation() {

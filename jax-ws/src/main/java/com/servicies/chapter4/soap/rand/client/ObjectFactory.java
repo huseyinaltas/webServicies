@@ -24,10 +24,10 @@ import javax.xml.namespace.QName;
 @XmlRegistry
 public class ObjectFactory {
 
-    private final static QName _Next1_QNAME = new QName("http://soap.chapter4.servicies.com/", "next1");
-    private final static QName _NextN_QNAME = new QName("http://soap.chapter4.servicies.com/", "nextN");
-    private final static QName _Next1Response_QNAME = new QName("http://soap.chapter4.servicies.com/", "next1Response");
-    private final static QName _NextNResponse_QNAME = new QName("http://soap.chapter4.servicies.com/", "nextNResponse");
+    private final static QName _Next1_QNAME = new QName("http://server.rand.soap.chapter4.servicies.com/", "next1");
+    private final static QName _NextN_QNAME = new QName("http://server.rand.soap.chapter4.servicies.com/", "nextN");
+    private final static QName _Next1Response_QNAME = new QName("http://server.rand.soap.chapter4.servicies.com/", "next1Response");
+    private final static QName _NextNResponse_QNAME = new QName("http://server.rand.soap.chapter4.servicies.com/", "nextNResponse");
 
     /**
      * Create a new ObjectFactory that can be used to create new instances of schema derived classes for package: com.servicies.chapter4.soap.rand.client
@@ -72,7 +72,7 @@ public class ObjectFactory {
      * Create an instance of {@link JAXBElement }{@code <}{@link Next1 }{@code >}}
      * 
      */
-    @XmlElementDecl(namespace = "http://soap.chapter4.servicies.com/", name = "next1")
+    @XmlElementDecl(namespace = "http://server.rand.soap.chapter4.servicies.com/", name = "next1")
     public JAXBElement<Next1> createNext1(Next1 value) {
         return new JAXBElement<Next1>(_Next1_QNAME, Next1 .class, null, value);
     }
@@ -81,7 +81,7 @@ public class ObjectFactory {
      * Create an instance of {@link JAXBElement }{@code <}{@link NextN }{@code >}}
      * 
      */
-    @XmlElementDecl(namespace = "http://soap.chapter4.servicies.com/", name = "nextN")
+    @XmlElementDecl(namespace = "http://server.rand.soap.chapter4.servicies.com/", name = "nextN")
     public JAXBElement<NextN> createNextN(NextN value) {
         return new JAXBElement<NextN>(_NextN_QNAME, NextN.class, null, value);
     }
@@ -90,7 +90,7 @@ public class ObjectFactory {
      * Create an instance of {@link JAXBElement }{@code <}{@link Next1Response }{@code >}}
      * 
      */
-    @XmlElementDecl(namespace = "http://soap.chapter4.servicies.com/", name = "next1Response")
+    @XmlElementDecl(namespace = "http://server.rand.soap.chapter4.servicies.com/", name = "next1Response")
     public JAXBElement<Next1Response> createNext1Response(Next1Response value) {
         return new JAXBElement<Next1Response>(_Next1Response_QNAME, Next1Response.class, null, value);
     }
@@ -99,7 +99,7 @@ public class ObjectFactory {
      * Create an instance of {@link JAXBElement }{@code <}{@link NextNResponse }{@code >}}
      * 
      */
-    @XmlElementDecl(namespace = "http://soap.chapter4.servicies.com/", name = "nextNResponse")
+    @XmlElementDecl(namespace = "http://server.rand.soap.chapter4.servicies.com/", name = "nextNResponse")
     public JAXBElement<NextNResponse> createNextNResponse(NextNResponse value) {
         return new JAXBElement<NextNResponse>(_NextNResponse_QNAME, NextNResponse.class, null, value);
     }

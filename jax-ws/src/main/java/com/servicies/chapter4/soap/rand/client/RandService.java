@@ -18,7 +18,7 @@ import javax.xml.ws.ResponseWrapper;
  * Generated source version: 2.2
  * 
  */
-@WebService(name = "RandService", targetNamespace = "http://soap.chapter4.servicies.com/")
+@WebService(name = "RandService", targetNamespace = "http://server.rand.soap.chapter4.servicies.com/")
 @XmlSeeAlso({
     ObjectFactory.class
 })
@@ -32,9 +32,9 @@ public interface RandService {
      */
     @WebMethod
     @WebResult(targetNamespace = "")
-    @RequestWrapper(localName = "next1", targetNamespace = "http://soap.chapter4.servicies.com/", className = "com.servicies.chapter4.soap.rand.client.Next1")
-    @ResponseWrapper(localName = "next1Response", targetNamespace = "http://soap.chapter4.servicies.com/", className = "com.servicies.chapter4.soap.rand.client.Next1Response")
-    @Action(input = "http://soap.chapter4.servicies.com/RandService/next1Request", output = "http://soap.chapter4.servicies.com/RandService/next1Response")
+    @RequestWrapper(localName = "next1", targetNamespace = "http://server.rand.soap.chapter4.servicies.com/", className = "com.servicies.chapter4.soap.rand.client.Next1")
+    @ResponseWrapper(localName = "next1Response", targetNamespace = "http://server.rand.soap.chapter4.servicies.com/", className = "com.servicies.chapter4.soap.rand.client.Next1Response")
+    @Action(input = "http://server.rand.soap.chapter4.servicies.com/RandService/next1Request", output = "http://server.rand.soap.chapter4.servicies.com/RandService/next1Response")
     public int next1();
 
     /**
@@ -45,9 +45,9 @@ public interface RandService {
      */
     @WebMethod
     @WebResult(targetNamespace = "")
-    @RequestWrapper(localName = "nextN", targetNamespace = "http://soap.chapter4.servicies.com/", className = "com.servicies.chapter4.soap.rand.client.NextN")
-    @ResponseWrapper(localName = "nextNResponse", targetNamespace = "http://soap.chapter4.servicies.com/", className = "com.servicies.chapter4.soap.rand.client.NextNResponse")
-    @Action(input = "http://soap.chapter4.servicies.com/RandService/nextNRequest", output = "http://soap.chapter4.servicies.com/RandService/nextNResponse")
+    @RequestWrapper(localName = "nextN", targetNamespace = "http://server.rand.soap.chapter4.servicies.com/", className = "com.servicies.chapter4.soap.rand.client.NextN")
+    @ResponseWrapper(localName = "nextNResponse", targetNamespace = "http://server.rand.soap.chapter4.servicies.com/", className = "com.servicies.chapter4.soap.rand.client.NextNResponse")
+    @Action(input = "http://server.rand.soap.chapter4.servicies.com/RandService/nextNRequest", output = "http://server.rand.soap.chapter4.servicies.com/RandService/nextNResponse")
     public List<Integer> nextN(
         @WebParam(name = "arg0", targetNamespace = "")
         int arg0);
